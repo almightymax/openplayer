@@ -2,3 +2,8 @@ RewriteEngine On
 
 RewriteRule ^web/(.*)$ web/$1 [L]
 RewriteRule ^.*$ index.php [L]
+
+<IfModule mod_charset.c>
+  CharsetDisable On
+</IfModule>
+AddDefaultCharset UTF-8
